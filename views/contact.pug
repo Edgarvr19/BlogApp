@@ -1,0 +1,21 @@
+extends layouts/standard.pug
+block content
+    .container-fluid
+        .row#rowContact
+            .col-md-6.offset-md-3
+                h1= title
+                form(action="#")
+                    .row
+                        .col
+                            .form-group
+                                textarea(name="", cols="30", rows="10", class="form-control", placeholder="Message")
+                    .row
+                        .col-md-4
+                            .form-group
+                                input(type="text", class="form-control", placeholder="Full name", required="true")
+                        .col-md-4
+                            .form-group
+                                input(type="email", class="form-control", placeholder="Email", required="true")
+                        .col-md-4
+                            .form-group
+                                button(class="btn btn-success", style="width:100%", type="submit") Send
